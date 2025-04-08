@@ -4,9 +4,6 @@ Para facilitar la conexión entre el FrontEnd y el BackEnd, utilizamos el servic
 
 Para que la aplicación funcione correctamente, es necesario exponer nuestra IP local a través de "ngrok", lo que permite montar un servidor y posibilita que Flutter se comunique con Java. La base de datos se puede construir de la siguiente manera:
 
-sql
-Copiar
-Editar
 CREATE TABLE Users (
     id INT PRIMARY KEY IDENTITY,
     nombre VARCHAR(100),
@@ -15,12 +12,10 @@ CREATE TABLE Users (
     usuario VARCHAR(50),
     contrasena VARCHAR(255) 
 );
+
 Los pasos para ejecutar el proyecto son los siguientes:
 
-Inicia el servicio de Java Spring Boot.
-
-Luego, inicia "ngrok".
-
-Es recomendable realizar pruebas en "Postman" para verificar que, al ejecutar el servidor Tomcat en Spring Boot, este pueda recibir y enviar datos correctamente.
-
-Una vez verificado, podrás ejecutar Flutter.
+1. Inicia el servicio de Java Spring Boot.
+2. Luego, inicia "ngrok".
+3. Es recomendable realizar pruebas en "Postman" para verificar que, al ejecutar el servidor Tomcat en Spring Boot, este pueda recibir y enviar datos correctamente.
+4. Una vez verificado, podrás ejecutar Flutter.
